@@ -15,22 +15,26 @@ export default new Router({
         {
           name: 'DASHBOARD',
           path: 'dashboard',
-          component: require('../views/page/dashboard.vue')
+          component: () => import('@/views/page/dashboard')
+          // component: require('../views/page/dashboard.vue')
         },
         {
           name: 'AGENT',
           path: 'agent',
-          component: require('../views/page/agent.vue')
+          component: () => import('@/views/page/agent')
+          // component: require('../views/page/agent.vue')
         },
         {
           name: 'MY CRUISE',
           path: 'mycruise',
-          component: require('../views/page/mycruise.vue')
+          component: () => import('@/views/page/mycruise')
+          // component: require('../views/page/mycruise.vue')
         },
         {
           name: 'HELP',
           path: 'help',
-          component: require('../views/page/help.vue')
+          component: () => import('@/views/page/help')
+          // component: require('../views/page/help.vue')
         }
       ]
     },
